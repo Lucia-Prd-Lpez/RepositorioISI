@@ -268,6 +268,24 @@ enlazar a los términos de esta sección, pero no los definirá de nuevo.
 
 | Término | Definición en Proyecto Simbiosis | Fuente |
 | --- | --- | --- |
+### 9. GLOSARIO
+
+| Término | Definición en Proyecto Simbiosis | Fuente |
+| --- | --- | --- |
+| **Alias** | Identificador público único del usuario en la plataforma (mínimo 3 caracteres, sin espacios, con opción de guiones), visibilizado en el foro y espacios públicos en lugar de su nombre completo. | Catálogo de Requisitos, FR-188 y FR-192 |
+| **Alerta crítica** | Notificación generada automáticamente cuando un dato fisiológico registrado supera los umbrales definidos por un nutricionista o por el sistema. Sugiere explícitamente buscar atención médica. | Catálogo de Requisitos, FR-051 y FR-217 |
+| **Calculadora nutricional** | Herramienta automática que estima calorías, proteínas, carbohidratos y grasas por porción en una receta a partir de los ingredientes ingresados. | Catálogo de Requisitos, FR-065 |
+| **Coordinador** | Clase de usuario responsable de supervisar y moderar contenidos (recetas, consejos, comentarios), administrar cuentas de usuario y garantizar el cumplimiento de las políticas de la plataforma. | SRS, §2.2 y Catálogo de Requisitos, UR-10 y UR-13 |
+| **Cuidador** | Clase de usuario vinculada a uno o varios pacientes autorizados para ayudar o colaborar en la gestión de su salud y hábitos dentro de la plataforma. | SRS, §2.2 y Catálogo de Requisitos, FR-193 y FR-194 |
+| **Datos fisiológicos y de salud** | Parámetros corporales (peso, altura, presión arterial, frecuencia cardíaca, temperatura) y análisis de laboratorio (glucosa, colesterol, etc.) registrados por el paciente. | Catálogo de Requisitos, FR-041 y FR-042 |
+| **Enfermedades Inflamatorias Intestinales (EII)** | Conjunto de patologías digestivas crónicas en las que se enfoca la plataforma para ofrecer apoyo comunitario, consejos e información de salud y recetas adaptadas. | SRS, §1.1 y Catálogo de Requisitos, BO-01 |
+| **Guía interactiva** | Módulo de ayuda en pantalla que ofrece tutoriales contextuales, elementos visuales e instrucciones paso a paso sobre el uso de la plataforma. | Catálogo de Requisitos, UR-12, FR-172 a FR-180 |
+| **Nutricionista** | Clase de usuario profesional de la salud verificado mediante titulación oficial, que unifica las atribuciones médicas y nutricionales para publicar consejos, crear recetas o validar las propuestas por usuarios. | SRS, §2.2 y Catálogo de Requisitos, FR-014, FR-055, FR-067 y FR-205 |
+| **Paciente** | Clase de usuario que padece o convive con una EII, con acceso a la gestión de sus propios datos de salud, recetas, consejos e interacción en la comunidad. | SRS, §2.2 y Catálogo de Requisitos, UR-05 |
+| **Receta propuesta** | Receta creada por un paciente o cuidador que permanece pendiente de revisión hasta que un nutricionista verifique y autorice su publicación como validada. | Catálogo de Requisitos, FR-204 y FR-205 |
+| **Receta validada** | Receta que ha superado el filtro de revisión de un nutricionista (o que ha sido creada directamente por uno) y muestra una insignia distintiva de calidad clínica. | Catálogo de Requisitos, FR-055, FR-066 y FR-205 |
+| **Reporte de contenido** | Notificación enviada por un usuario para señalar que un contenido (receta, comentario, publicación, perfil) incumple las reglas de uso o es inapropiado. | Catálogo de Requisitos, UR-09, FR-120 a FR-126 |
+| **Umbral crítico** | Límite numérico o condición prefijada sobre un parámetro de salud (definido por el nutricionista o el sistema) que activa una alerta cuando es superado. | Catálogo de Requisitos, FR-051 y FR-202 |
 
 ## 10. Modelos de análisis
 

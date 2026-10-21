@@ -291,7 +291,7 @@ Los apartados 6.1 y 6.2 corresponden a las descripciones detalladas de UC-05 y U
 
 **Precondiciones:** [El usuario registrado cuenta con una sesión activa e iniciada en la plataforma.]
 
-**Inicio:** * *Acta UC-21 (Sección 1 y 2):* El usuario solicita acceder al formulario o sección de búsqueda de recetas.
+**Inicio:** El usuario solicita acceder al formulario o sección de búsqueda de recetas.
 
 **Escenario principal de éxito:**
 1. *Acta UC-21 (Sección 2 - Criterios de búsqueda):* El usuario introduce o selecciona al menos uno de los criterios disponibles: texto libre (palabra o frase), ingredientes a incluir y/o ingredientes a excluir.

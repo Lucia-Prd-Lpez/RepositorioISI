@@ -223,25 +223,34 @@ Los apartados 6.1 y 6.2 corresponden a las descripciones detalladas de UC-05 y U
 
 ### 6.1 Descripción detallada UC-05 — Actualizar perfil
 
-**Identificador y nombre del caso de uso:** [Indica el caso.]
+**Identificador y nombre del caso de uso:** [UC-05 Actualizar perfil]
 
-**Objetivo:** [Explica qué resultado pretende obtener el participante.]
+**Objetivo:** [pretende actualizar su propio perfil y conservar los cambios]
 
-**Participantes:** [Indica el actor principal y los actores de apoyo, si los hay.]
+**Participantes:** [actor principal: usuario registrado. Actores de apoyo: ninguno]
 
-**Precondiciones:** [Indica qué se da por cumplido al comenzar. Las comprobaciones que realiza el sistema pertenecen al flujo.]
+**Precondiciones:** [La persona ya tiene una cuenta activa y una sesión iniciada]
 
-**Inicio:** [Indica qué acción o suceso inicia el caso.]
+**Inicio:** [Acta UC-05 (Secciones 1 y 2): La persona usuaria solicita acceder a la pantalla o módulo de edición y gestión de su perfil propio]
 
-**Escenario principal de éxito:** [Describe la secuencia entre los participantes y el sistema.]
+**Escenario principal de éxito:** [Acta UC-05 (Sección 1): El usuario solicita acceder a la gestión de su perfil.   Acta UC-05 (Sección 2 - Datos que se pueden modificar), Catálogo de requisitos (FR-019) y Acta de requisitos generales (Sección 1.1): El sistema recupera y muestra los datos almacenados actualmente en el perfil:   Campos de solo lectura (no modificables): Alias y correo electrónico.Campos editables: Nombre completo, teléfono, dirección postal (opcional) y preferencias dietéticas (opciones: vegana, sin gluten, baja en carbohidratos).Acta UC-05 (Sección 2 - Datos que se pueden modificar): El usuario modifica los campos deseados e introduce la nueva información.   Acta UC-05 (Sección 2 - Guardado y cancelación): El usuario solicita guardar las modificaciones realizadas.   Acta UC-05 (Sección 2 - Validación de los cambios) y Acta UR-01 (Sección 2.1): El sistema valida los datos introducidos (comprueba que el nombre completo y el teléfono no estén vacíos —un valor de solo espacios se considera vacío— y que el teléfono cumpla el formato adecuado admitiendo prefijos internacionales).   Acta UC-05 (Sección 2 - Guardado y cancelación): El sistema guarda conjuntamente todas las modificaciones en el perfil.   Acta UC-05 (Sección 2 - Guardado y cancelación): El sistema confirma mediante un mensaje en pantalla que el perfil se ha actualizado correctamente.]
 
-**Extensiones (flujos alternativos):** [Vincula cada variación a un paso. Indica cómo continúa o termina.]
+**Extensiones (flujos alternativos):** [5a. Los datos introducidos no son válidos (ej. nombre completo o teléfono vacíos, o teléfono con formato incorrecto): Acta UC-05 (Sección 2 - Validación de los cambios): El sistema identifica el campo o campos concretos que contienen errores y muestra un mensaje explicativo con la corrección necesaria.
+Acta UC-05 (Sección 2 - Validación de los cambios): El sistema mantiene en pantalla los valores recién introducidos por el usuario y no guarda ningún cambio en el perfil.
+Acta UC-05 (Sección 2 - Validación de los cambios): El usuario corrige los datos erróneos y vuelve a solicitar el guardado (el flujo reanuda en el paso 5 del escenario principal).
+4a-7a. El usuario cancela la operación antes de guardar:
+Acta UC-05 (Sección 2 - Guardado y cancelación): El usuario solicita cancelar la edición antes de confirmar el guardado.
+Acta UC-05 (Sección 2 - Guardado y cancelación): El sistema descarta los cambios realizados durante la sesión de edición actual.
+Acta UC-05 (Sección 2 - Guardado y cancelación): El sistema muestra el perfil conservando intactos los valores guardados previamente y finaliza el caso de uso sin éxito.
+6a. Imposibilidad técnica para realizar el guardado (fallo del sistema):
+Acta UC-05 (Sección 2 - Guardado y cancelación) y Acta UR-01 (Sección 2.7): El sistema detecta un problema técnico o de conexión que impide guardar la información en la base de datos.
+Acta UC-05 (Sección 2 - Guardado y cancelación): El sistema conserva en pantalla los datos introducidos para permitir un reintento por parte del usuario, dejando la base de datos sin modificaciones.]
 
-**Postcondiciones:** [Indica qué queda establecido con éxito y qué se conserva o cambia si el caso termina sin éxito o se cancela. Una consulta no requiere modificar datos para alcanzar su objetivo.]
+**Postcondiciones:** [Éxito: los datos personales, de contacto y preferencias dietéticas de la cuenta quedan actualizados en el sistema. Qué se conserva o cambia si el caso termina sin éxito o se cancela: El perfil de la cuenta mantiene exactamente los mismos datos e información almacenados previamente]
 
-**Reglas y NFR pertinentes:** [Remite a los requisitos y actas que condicionan el comportamiento.]
+**Reglas y NFR pertinentes:** [Catálogo de requisitos (Secciones 3 y 4) y Acta UC-05 (Secciones 2 y 3): UR-03 / FR-019: Permite a los usuarios editar su información personal y preferencias desde su perfil en cualquier momento, excluyendo explícitamente la modificación del alias y del correo electrónico.   Acta UC-05 (Sección 2), Acta UR-01 (Sección 2.1) y Acta de requisitos generales (Sección 1.1): Reglas de obligatoriedad y formato de datos: El nombre completo y el teléfono son campos obligatorios (un valor compuesto solo por espacios no es válido). El teléfono debe validar su formato en tiempo real y admitir prefijos internacionales. La dirección postal y las preferencias dietéticas son opcionales.   Acta UC-05 (Sección 2): Exclusión explícita de datos de salud: Las preferencias dietéticas son opcionales y no constituyen datos de salud ni sustituyen el registro de alergias del paciente.   Modelo de casos de uso (Sección 5) y Catálogo de requisitos (NFR-010): NFR-010: Requisito no funcional de accesibilidad (WCAG 2.2, nivel AA) aplicable a todas las pantallas, formularios y mensajes de validación o error.]
 
-**Preguntas abiertas:** [Registra solo las cuestiones necesarias que las fuentes no resuelvan. Si no hay preguntas para el alcance descrito, indícalo.]
+**Preguntas abiertas:** [No hay preguntas abiertas para el alcance descrito en esta versión.]
 
 ### 6.2 Descripción detallada UC-21 — Buscar recetas
 

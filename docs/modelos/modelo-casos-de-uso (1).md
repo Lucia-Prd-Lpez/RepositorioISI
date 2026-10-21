@@ -236,7 +236,7 @@ Los apartados 6.1 y 6.2 corresponden a las descripciones detalladas de UC-05 y U
 2. La persona usuaria ha iniciado sesión previamente en el sistema (sesión activa).
 
 **Inicio:** 
-* *Acta UC-05 (Secciones 1 y 2):* La persona usuaria solicita acceder a la pantalla o módulo de edición y gestión de su perfil propio.
+*Acta UC-05 (Secciones 1 y 2):* La persona usuaria solicita acceder a la pantalla o módulo de edición y gestión de su perfil propio.
 
 **Escenario principal de éxito:**
 1. *Acta UC-05 (Sección 1):* El usuario solicita acceder a la gestión de su perfil.

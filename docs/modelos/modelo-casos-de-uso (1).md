@@ -223,48 +223,48 @@ Los apartados 6.1 y 6.2 corresponden a las descripciones detalladas de UC-05 y U
 
 ### 6.1 Descripción detallada UC-05 — Actualizar perfil
 
-**Identificador y nombre del caso de uso:** UC-05 Actualizar perfil[cite: 1, 2]
+**Identificador y nombre del caso de uso:** UC-05 Actualizar perfil
 
-**Objetivo:** Permitir a la persona usuaria registrada consultar y actualizar sus datos personales, de contacto y sus preferencias dietéticas en la plataforma, asegurando la validez de los datos introducidos y conservando los cambios solicitados.[cite: 2, 4]
+**Objetivo:** Permitir a la persona usuaria registrada consultar y actualizar sus datos personales, de contacto y sus preferencias dietéticas en la plataforma, asegurando la validez de los datos introducidos y conservando los cambios solicitados.
 
 **Participantes:**
-* **Principal:** Usuario registrado.[cite: 1, 2]
-* **Apoyo:** Ninguno.[cite: 2]
+* **Principal:** Usuario registrado.
+* **Apoyo:** Ninguno.
 
 **Precondiciones:**
-1. La persona usuaria cuenta con una cuenta activa en la plataforma.[cite: 2]
-2. La persona usuaria ha iniciado sesión previamente en el sistema (sesión activa).[cite: 2]
+1. La persona usuaria cuenta con una cuenta activa en la plataforma.
+2. La persona usuaria ha iniciado sesión previamente en el sistema (sesión activa).
 
 **Inicio:** 
-* *Acta UC-05 (Secciones 1 y 2):* La persona usuaria solicita acceder a la pantalla o módulo de edición y gestión de su perfil propio.[cite: 2]
+* *Acta UC-05 (Secciones 1 y 2):* La persona usuaria solicita acceder a la pantalla o módulo de edición y gestión de su perfil propio.
 
 **Escenario principal de éxito:**
-1. *Acta UC-05 (Sección 1):* El usuario solicita acceder a la gestión de su perfil.[cite: 2]
-2. *Acta UC-05 (Sección 2 - Datos que se pueden modificar), Catálogo de requisitos (FR-019) y Acta de requisitos generales (Sección 1.1):* El sistema recupera y muestra los datos almacenados actualmente en el perfil:[cite: 2, 4, 5]
-   * **Campos de solo lectura (no modificables):** Alias y correo electrónico.[cite: 2, 4]
-   * **Campos editables:** Nombre completo, teléfono, dirección postal (opcional) y preferencias dietéticas (opciones: vegana, sin gluten, baja en carbohidratos).[cite: 2, 5]
-3. *Acta UC-05 (Sección 2 - Datos que se pueden modificar):* El usuario modifica los campos deseados e introduce la nueva información.[cite: 2]
-4. *Acta UC-05 (Sección 2 - Guardado y cancelación):* El usuario solicita guardar las modificaciones realizadas.[cite: 2]
-5. *Acta UC-05 (Sección 2 - Validación de los cambios) y Acta UR-01 (Sección 2.1):* El sistema valida los datos introducidos (comprueba que el nombre completo y el teléfono no estén vacíos —un valor de solo espacios se considera vacío— y que el teléfono cumpla el formato adecuado admitiendo prefijos internacionales).[cite: 2, 3]
-6. *Acta UC-05 (Sección 2 - Guardado y cancelación):* El sistema guarda conjuntamente todas las modificaciones en el perfil.[cite: 2]
-7. *Acta UC-05 (Sección 2 - Guardado y cancelación):* El sistema confirma mediante un mensaje en pantalla que el perfil se ha actualizado correctamente.[cite: 2]
+1. *Acta UC-05 (Sección 1):* El usuario solicita acceder a la gestión de su perfil.
+2. *Acta UC-05 (Sección 2 - Datos que se pueden modificar), Catálogo de requisitos (FR-019) y Acta de requisitos generales (Sección 1.1):* El sistema recupera y muestra los datos almacenados actualmente en el perfil:
+   * **Campos de solo lectura (no modificables):** Alias y correo electrónico.
+   * **Campos editables:** Nombre completo, teléfono, dirección postal (opcional) y preferencias dietéticas (opciones: vegana, sin gluten, baja en carbohidratos).
+3. *Acta UC-05 (Sección 2 - Datos que se pueden modificar):* El usuario modifica los campos deseados e introduce la nueva información.
+4. *Acta UC-05 (Sección 2 - Guardado y cancelación):* El usuario solicita guardar las modificaciones realizadas.
+5. *Acta UC-05 (Sección 2 - Validación de los cambios) y Acta UR-01 (Sección 2.1):* El sistema valida los datos introducidos (comprueba que el nombre completo y el teléfono no estén vacíos —un valor de solo espacios se considera vacío— y que el teléfono cumpla el formato adecuado admitiendo prefijos internacionales).
+6. *Acta UC-05 (Sección 2 - Guardado y cancelación):* El sistema guarda conjuntamente todas las modificaciones en el perfil
+7. *Acta UC-05 (Sección 2 - Guardado y cancelación):* El sistema confirma mediante un mensaje en pantalla que el perfil se ha actualizado correctamente.
 
 **Extensiones (flujos alternativos):**
 
 * **5a. Los datos introducidos no son válidos (ej. nombre completo o teléfono vacíos, o teléfono con formato incorrecto):**
-  1. *Acta UC-05 (Sección 2 - Validación de los cambios):* El sistema identifica el campo o campos concretos que contienen errores y muestra un mensaje explicativo con la corrección necesaria.[cite: 2]
-  2. *Acta UC-05 (Sección 2 - Validación de los cambios):* El sistema mantiene en pantalla los valores recién introducidos por el usuario y no guarda ningún cambio en el perfil.[cite: 2]
-  3. *Acta UC-05 (Sección 2 - Validación de los cambios):* El usuario corrige los datos erróneos y vuelve a solicitar el guardado (el flujo reanuda en el paso 5 del escenario principal).[cite: 2]
+  1. *Acta UC-05 (Sección 2 - Validación de los cambios):* El sistema identifica el campo o campos concretos que contienen errores y muestra un mensaje explicativo con la corrección necesaria.
+  2. *Acta UC-05 (Sección 2 - Validación de los cambios):* El sistema mantiene en pantalla los valores recién introducidos por el usuario y no guarda ningún cambio en el perfil.
+  3. *Acta UC-05 (Sección 2 - Validación de los cambios):* El usuario corrige los datos erróneos y vuelve a solicitar el guardado (el flujo reanuda en el paso 5 del escenario principal).
 
 * **4a-7a. El usuario cancela la operación antes de guardar:**
-  1. *Acta UC-05 (Sección 2 - Guardado y cancelación):* El usuario solicita cancelar la edición antes de confirmar el guardado.[cite: 2]
-  2. *Acta UC-05 (Sección 2 - Guardado y cancelación):* El sistema descarta los cambios realizados durante la sesión de edición actual.[cite: 2]
-  3. *Acta UC-05 (Sección 2 - Guardado y cancelación):* El sistema muestra el perfil conservando intactos los valores guardados previamente y finaliza el caso de uso sin éxito.[cite: 2]
+  1. *Acta UC-05 (Sección 2 - Guardado y cancelación):* El usuario solicita cancelar la edición antes de confirmar el guardado.
+  2. *Acta UC-05 (Sección 2 - Guardado y cancelación):* El sistema descarta los cambios realizados durante la sesión de edición actual.
+  3. *Acta UC-05 (Sección 2 - Guardado y cancelación):* El sistema muestra el perfil conservando intactos los valores guardados previamente y finaliza el caso de uso sin éxito.
 
 * **6a. Imposibilidad técnica para realizar el guardado (fallo del sistema):**
-  1. *Acta UC-05 (Sección 2 - Guardado y cancelación) y Acta UR-01 (Sección 2.7):* El sistema detecta un problema técnico o de conexión que impide guardar la información en la base de datos.[cite: 2, 3]
-  2. *Acta UC-05 (Sección 2 - Guardado y cancelación):* El sistema muestra un mensaje notificando del problema y no confirma la actualización del perfil.[cite: 2]
-  3. *Acta UC-05 (Sección 2 - Guardado y cancelación):* El sistema conserva en pantalla los datos introducidos para permitir un reintento por parte del usuario, dejando la base de datos sin modificaciones.[cite: 2]
+  1. *Acta UC-05 (Sección 2 - Guardado y cancelación) y Acta UR-01 (Sección 2.7):* El sistema detecta un problema técnico o de conexión que impide guardar la información en la base de datos.
+  2. *Acta UC-05 (Sección 2 - Guardado y cancelación):* El sistema muestra un mensaje notificando del problema y no confirma la actualización del perfil.
+  3. *Acta UC-05 (Sección 2 - Guardado y cancelación):* El sistema conserva en pantalla los datos introducidos para permitir un reintento por parte del usuario, dejando la base de datos sin modificaciones.
 
 **Postcondiciones:**
 * **Éxito:** Los datos personales, de contacto y preferencias dietéticas de la cuenta quedan actualizados en el sistema.[cite: 2]

@@ -267,17 +267,18 @@ Los apartados 6.1 y 6.2 corresponden a las descripciones detalladas de UC-05 y U
   3. *Acta UC-05 (Sección 2 - Guardado y cancelación):* El sistema conserva en pantalla los datos introducidos para permitir un reintento por parte del usuario, dejando la base de datos sin modificaciones.
 
 **Postcondiciones:**
-* **Éxito:** Los datos personales, de contacto y preferencias dietéticas de la cuenta quedan actualizados en el sistema.[cite: 2]
-* **Cancelación o fallo:** El perfil de la cuenta conserva exactamente los mismos datos e información almacenados previamente.[cite: 2]
+* **Éxito:** Los datos personales, de contacto y preferencias dietéticas de la cuenta quedan actualizados en el sistema.
+* **Cancelación o fallo:** El perfil de la cuenta conserva exactamente los mismos datos e información almacenados previamente.
 
 **Reglas y NFR pertinentes:**
-* *Catálogo de requisitos (Secciones 3 y 4) y Acta UC-05 (Secciones 2 y 3):* **UR-03 / FR-019:** Permite a los usuarios editar su información personal y preferencias desde su perfil en cualquier momento, excluyendo explícitamente la modificación del alias y del correo electrónico.[cite: 2, 4]
-* *Acta UC-05 (Sección 2), Acta UR-01 (Sección 2.1) y Acta de requisitos generales (Sección 1.1):* **Reglas de obligatoriedad y formato de datos:** El nombre completo y el teléfono son campos obligatorios (un valor compuesto solo por espacios no es válido).[cite: 2] El teléfono debe validar su formato en tiempo real y admitir prefijos internacionales.[cite: 2, 3] La dirección postal y las preferencias dietéticas son opcionales.[cite: 2, 5]
-* *Acta UC-05 (Sección 2):* **Exclusión explícita de datos de salud:** Las preferencias dietéticas son opcionales y no constituyen datos de salud ni sustituyen el registro de alergias del paciente.[cite: 2]
-* *Modelo de casos de uso (Sección 5) y Catálogo de requisitos (NFR-010):* **NFR-010:** Requisito no funcional de accesibilidad (WCAG 2.2, nivel AA) aplicable a todas las pantallas, formularios y mensajes de validación o error.[cite: 1, 4]
+* *Catálogo de requisitos (Secciones 3 y 4) y Acta UC-05 (Secciones 2 y 3):* **UR-03 / FR-019:** Permite a los usuarios editar su información personal y preferencias desde su perfil en cualquier momento, excluyendo explícitamente la modificación del alias y del correo electrónico.
+* *Acta UC-05 (Sección 2), Acta UR-01 (Sección 2.1) y Acta de requisitos generales (Sección 1.1):* **Reglas de obligatoriedad y formato de datos:** El nombre completo y el teléfono son campos obligatorios (un valor compuesto solo por espacios no es válido). El teléfono debe validar su formato en tiempo real y admitir prefijos internacionales. La dirección postal y las preferencias dietéticas son opcionales.
+* *Acta UC-05 (Sección 2):* **Exclusión explícita de datos de salud:** Las preferencias dietéticas son opcionales y no constituyen datos de salud ni sustituyen el registro de alergias del paciente.
+* *Modelo de casos de uso (Sección 5) y Catálogo de requisitos (NFR-010):* **NFR-010:** Requisito no funcional de accesibilidad aplicable a todas las pantallas, formularios y mensajes de validación o error.
 
-**Preguntas abiertas:**
-* *Modelo de casos de uso (Sección 6):* No hay preguntas abiertas para el alcance descrito en esta versión.[cite: 1]
+**Preguntas abiertas:** No hay preguntas abiertas para el alcance descrito en esta versión.
+
+
 ### 6.2 Descripción detallada UC-21 — Buscar recetas
 
 **Identificador y nombre del caso de uso:** [Indica el caso.]

@@ -1,11 +1,13 @@
 # Historias de usuario de búsqueda
 
 | Campo | Valor |
-| --- | --- |
+| Nombre | Lucia Parada López |
+| Grupo | ISI-1 |
 | Proyecto | Proyecto Simbiosis |
 | Fecha | [28/10/2026] |
 | Versión | [1.0] |
 | Estado | Borrador |
+| Declaración | No he utilizado IA |
 
 ## Fuentes comunes
 
@@ -35,8 +37,8 @@ Como [usuario registrado], quiero [buscar recetas mediante una palabra o frase e
 
 - **CA-01.** Dado que el usuario busca por el término texto «arroz», cuando ejecuta la búsqueda, entonces el sistema muestra únicamente las recetas publicadas y validadas que contengan la palabra «arroz» en el título o en la descripción breve, ordenadas por fecha de publicación con la más reciente primero.
 - **CA-02.** Dado que el usuario introduce la frase «crema de verduras», cuando ejecuta la búsqueda, entonces el sistema devuelve solo las recetas que contengan exactamente esas palabras seguidas y en ese orden en su título o descripción breve, ignorando mayúsculas y tildes.
-- **CA-03.** Dado que no existe ninguna receta con el término «pizza», cuando el usuario ejecuta la búsqueda, entonces el sistema indica que no hay resultados para esa búsqueda, conserva el término en el campo de entrada y propone la alternativa relacionada «pan de ajo» de forma separada sin cambiar los criterios ni ejecutar otra búsqueda automáticamente.
-- 
+- **CA-03.** Dado que no existen recetas publicadas que contengan el término «pizza», cuando el usuario ejecuta la búsqueda, entonces el sistema indica que no hay resultados para la búsqueda realizada conservando los criterios introducidos sin ejecutar búsquedas automáticas no solicitadas.
+
 ## US-02
 
 **Título:** [Búsqueda de recetas por ingredientes incluidos]
@@ -49,7 +51,7 @@ Como [usuario registrado], quiero [buscar recetas seleccionando uno o varios ing
 
 - **CA-01.** Dado que el usuario selecciona los ingredientes «manzana» y «avena», cuando ejecuta la búsqueda, entonces el sistema muestra únicamente las recetas publicadas y validadas que contengan conjuntamente todos y cada uno de los ingredientes seleccionados («manzana» y «avena»).
 - **CA-02.** Dado que el usuario introduce el texto «pastel» y selecciona el ingrediente «zanahoria», cuando ejecuta la búsqueda combinada, entonces el sistema devuelve únicamente las recetas que contengan la palabra «pastel» en título/descripción y que además incluyan la «zanahoria» entre sus ingredientes.
-- **CA-03.** Dado que el usuario abre el formulario de búsqueda, cuando no selecciona ningún ingrediente ni introduce ningún texto e intenta buscar, entonces el sistema solicita que indique al menos un criterio y conserva el formulario sin ejecutar la búsqueda.
+- **CA-03.** Dado que no se ha introducido ningún texto ni seleccionado ningún ingrediente, cuando el usuario solicita ejecutar la búsqueda, entonces el sistema requiere al menos un criterio conservando la búsqueda sin ejecutar.
 
 ## US-03
 
@@ -77,6 +79,9 @@ La revisión abarca US-01, US-02 y US-03. «Aplicado» indica si se ha realizado
 | Estimable | ¿Están claros el alcance y los datos necesarios para estimar el trabajo de cada historia? | Sí | Sí | El alcance de cada historia está acotado a un único tipo de filtrado y respaldado por sus FR correspondientes y los criterios de aceptación. |
 | Pequeña | ¿Se centra cada historia en una única capacidad de alcance manejable? | Sí | Sí | Cada historia aborda una sola capacidad derivada de la descomposición de la épica (texto libre, incluir ingredientes o excluir ingredientes). |
 | Comportable | ¿Los criterios de aceptación de cada historia describen acciones y resultados observables que permiten distinguir un comportamiento correcto de uno incorrecto? | Sí | Sí | Todos los CA utilizan el formato Dado-Cuando-Entonces con datos concretos (términos e ingredientes reales) para verificar el resultado. |
+
+### Nota de revisión e informe de mejora tras INVEST
+Tras realizar la comprobación INVEST, se decidió mantener la redacción final de las tres historias de usuario debido a que cada una refleja una capacidad de filtrado única y acotada según el acta de UC-21. Se verificó que los 9 criterios de aceptación incluyen datos explícitos (ej. "arroz", "manzana", "nueces") para garantizar que sean totalmente comprobables de forma objetiva.
 
 ## Dudas pendientes:
 [Ninguna]

@@ -1,6 +1,7 @@
 # Historias de usuario de búsqueda
 
 | Campo | Valor |
+| --- | --- |
 | Nombre | Lucia Parada López |
 | Grupo | ISI-1 |
 | Proyecto | Proyecto Simbiosis |
